@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
 import GoogleLogin from "react-google-login";
+import Discover from "./Discover";
+import SuggestedAccounts from "./SuggestedAccounts";
+import Footer from "./Footer";
 
 const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(true);
@@ -55,9 +58,9 @@ const Sidebar = () => {
             </div>
           )}
 
-          {/* <Discover />
-          <SuggestedAccounts/>
-          <Footer /> */}
+          <Discover />
+          <SuggestedAccounts />
+          <Footer />
         </div>
       )}
     </div>
